@@ -1,0 +1,19 @@
+{
+  "name": "chat-application",
+  "version": "1.0.0",
+  "description": "online chat app, express io demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zarif-Karim/Chat-App.git"
+  },
+  "author": "Zarif Karim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zarif-Karim/Chat-App/issues"
+  },
+  "homepage": "https://github.com/Zarif-Karim/Chat-App#readme"
+}
