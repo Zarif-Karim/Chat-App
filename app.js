@@ -12,12 +12,18 @@ app.use(express.static(__dirname+'/public'));
 
 app.get('/',(req,res)=>{
     console.log(req.url);
-    // res.sendFile(__dirname+'/public/index.html');
     res.end();
 });
 
 io.on('connection', (socket)=>{
     console.log('a user connected');
+
+    socket.on('disconnect', ()=> console.log('a user disconnected'));
+
+    socket.on('chat message', (msg)=>{
+        console.log('message: ' + msg);
+        socket.broadcast.emit('new message', msg);
+    });
 });
 
 server.listen(PORT, ()=>console.log(`Server started: http://localhost:${PORT}`));
