@@ -4,7 +4,8 @@
   "description": "online chat app, express io demo",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "test": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/Zarif-Karim/Chat-App/issues"
   },
-  "homepage": "https://github.com/Zarif-Karim/Chat-App#readme"
+  "homepage": "https://github.com/Zarif-Karim/Chat-App#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.3"
+  }
 }
